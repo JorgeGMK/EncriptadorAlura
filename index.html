@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="script.js"></script>
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="IMG/logo.png" alt="Logo Alura">
+        </header>
+
+        <main>
+
+            <section class="seccion1">
+                <textarea name="resultado" id="Respuesta" class="textArea" cols="30" rows="10"></textarea>
+                <input type="text" id="textoIntroducido" class="inputBox" placeholder="Ingresa el texto que deseas encriptar o desencriptar.">
+                <div class="botones">
+                    <button type="button" id="botonEncriptador">Encriptar Mensaje</button>
+                    <button type="button" id="botonDesencriptador">Desencriptar Mensaje</button>
+                </div>
+                <div class="copias">
+                    <button type="button" id="botonCopiar"></button>
+                </div>                             
+            </section>
+
+            <section class="seccion2">
+                <div class="contenedorMuñeco">
+                    <img src="IMG/Muñeco.png" alt="Muñeco">
+                </div>
+                <div class="contenedorMensaje">
+                    <h3>¿Buscas la verdad? ¿O deseas ocultar algo?</h3>
+                </div>
+            </section>
+                        
+        </main>
+
+        <footer>
+            <div>
+                <p class="Identificacion">By Jorge Fernando Gómez Marmol</p>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+        var btnEncriptar=document.querySelector("#botonEncriptador");
+        btnEncriptar.onclick=encriptar;
+        var btnDesencriptar=document.querySelector("#botonDesencriptador");
+        btnDesencriptar.onclick=desencriptar;
+        var btnCopiar=document.querySelector("#botonCopiar");
+        btnCopiar.onclick=copiar;  
+    </script>
+
+</html>
